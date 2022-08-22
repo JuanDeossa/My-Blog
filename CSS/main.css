@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Roboto+Slab:wght@400;600;900&family=Roboto:wght@300;500&display=swap');
+
+html{    font-size: 6.25%;}
+.body-Index{
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+    top: 0%; bottom: 0%; left: 0%; right: 0%;
+    font-family: "Roboto Mono", sans-serif, monospace;
+}
+.header-logos-nav *{
+    text-decoration: none;
+    color: white;
+}
+header{
+    width: 100%; 
+    /* border-bottom: 1px dotted black; */
+    display: grid;
+    grid-template-rows: 60px 80px;
+}
+.header-logos{
+    grid-row: 1/2;
+    display: grid;
+    justify-items: end;
+    width: 100%; height: 60px;
+    background-color: #40c7a3;
+}
+.header-logos>div{
+    width: 320px; height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-logos-nav{
+    margin-right: 50px;
+}
+.header-logos-nav span{
+    color: white;
+}
+.header-links-nav{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.header-links-nav_Mi-Blog{
+    margin-left: 30px;
+}
+.header-links-nav_Mi-Blog img{
+    height: 70px;
+}
+.header-links-nav_Sobre-mi{
+    justify-self: end;
+    margin-right: 50px;
+    color: black;
+    font-weight: bolder;
+    font-size: 25rem;
+}
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-image: url("https://i.postimg.cc/0NcqXzg8/Cover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-home__Text{
+    display: block;
+    width: 60%;
+    margin: 150px auto 100px auto;
+    color: white;
+    font-size: 40rem;
+    text-align: center; 
+    letter-spacing: 10px;
+}
+.main-home__Button{
+    display: block;
+    height: auto; width: auto;
+    font-size: 30rem;
+    background-color: #40c7a3;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px white;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    border: 2px solid rgb(55, 55, 55);
+}
+.main-home__Button:hover{
+    border: 2px solid black;
+    text-shadow: 1.5px 1.5px 1px black;
+    transform: scale(1.05);
+}
+/* Aca empieza el CSS del Blog */
+.Button-A-Type{
+    display: block;
+    height: auto; width: 30%;
+    font-size: 20rem;
+    background-color: rgb(218, 218, 218);
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px white;
+    padding: 1px;
+    color: white;
+    text-shadow: 1px 1px 1px grey;
+    text-decoration: none;
+    border: 2px solid #40c7a3;
+    text-align: center ;
+}
+.main-Blog, .footer-Blog {
+    font-size: 20rem;
+    color: black;
+}
+.body-Blog{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", sans-serif, monospace;
+}
+.body-Blog h1,h2,h3{
+    margin: 0%;
+}
+.News-Blog{
+    background-color:  #e6e9ed;
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+}
+.News-Blog__Left {
+    display: grid;
+    align-items: start;
+    margin-bottom: 40px; margin-top: 15px;
+}
+.News-Blog__Left > div{
+    width: 70%; height: 80%;
+    display: grid;
+    gap: 10px;
+    justify-self: end;
+    margin-right: 15px;
+}
+.News-Blog__img{
+    width: 100%; height: 100%;
+}
+.News-Blog__Right{
+    display: grid;
+    justify-items: center;
+    align-items: start;
+}
+.News-Blog__Right>div{
+    width: 70%;
+    margin-top: 50px;
+}
+/* Aqui empiezan los estilos de la seccion de los blogs */
+/* .main-Blog{
+    margin: 0 70px 30px;
+} */
+.Articles-Blog{
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    " Att Att Att "
+    " A1 A2 A3 "
+    " A4 A5 A6 ";
+    justify-items: center;
+}
+.Articles-Blog>div{
+    width: 100%;
+}
+.Articles-Blog article{
+    width: 100%;
+    height: 100%;
+}
+.Articles-Blog__Title{
+    grid-area: Att;
+    margin-top: 15px;margin-bottom: 20px; 
+}
+.Articles-Blog__A1{
+    grid-area: A1;
+}
+.Articles-Blog__A2{
+    grid-area: A2;
+}
+.Articles-Blog__A3{
+    grid-area: A3;
+}
+.Articles-Blog__A4{
+    grid-area: A4;
+}
+.Articles-Blog__A5{
+    grid-area: A5;
+}
+.Articles-Blog__A6{
+    grid-area: A6;
+}
+.Articles-Blog img{
+    width: 100%;
+}
+.Articles-Blog__A1{
+    width: 100%;
+}
+/* Aqui empiezan los estilos del Footer */
+.footer-Blog{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60px;
+    background-color: #22272d;
+    border-top: 25px solid #40c7a3 ;
+    color: white;
+    padding-bottom: 13px;
+}
